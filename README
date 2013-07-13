@@ -1,2 +1,21 @@
-Yet another open source SW for eZ430 Chronos watch
+---------------------------------------------------------------------------
+
+Firmware:     FreeChronos
+Author:       Radoslaw Biernacki <radoslaw.biernacki@gmail.com>
+License:      BSD Revised
+
+---------------------------------------------------------------------------
+
+FreeChronos is open source firmware for eZ430 Chronos watch. In difference to
+"openchronos" and "openchronos-ng" it is not using proprietary SimpliciTI and
+BlueRobin protocols. It will provide proper equivalents while it will remain
+free and truly open source.
+
+---------------------------------------------------------------------------
+
+DOCUMENTATION:
+
+All documentation is contained within the source files.
+
+---------------------------------------------------------------------------
 
