@@ -106,11 +106,9 @@ ifneq ($(MAKECMDGOALS), clean)
 -include $(DEPEND)
 endif
 # dependencies file
-# includes also considered, since some of these are our own
-# (otherwise use -MM instead of -M)
 $(BUILDDIR)/%.d: %.c
 	echo "Generating dependencies $@ from $<"
-	$(CC) -M ${CFLAGS} $(INCLUDES) $< >$@
+	$(CC) -MM -MT $(@:.d=.o) ${CFLAGS} $(INCLUDES) $< >$@
 .SILENT:
 .PHONY: clean
 clean:
